@@ -6,7 +6,7 @@ SELECT
   ap.id, -- The appointment's serial number in the database table
   ap.patientkey, -- The string identifier of the pantient having the appointment
   p.chartnumber AS "Patient Chart #", -- The patient Profile number
-  concat(p.firstname, ' ', p.middlename, ' ', p.lastname) AS "Patient Name", The patient's full name
+  concat(p.firstname, ' ', p.middlename, ' ', p.lastname) AS "Patient Name", -- The patient's full name
   -- p.fullname AS "Patient Name", -- Another way to print the patient's full name
   cat.name AS "Appointment Type", -- The category is the "appointment type"
   --c.name AS "Clinic", -- The clinic is the company profile (branch)
